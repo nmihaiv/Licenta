@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "comenzi",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7126"
+        }
+      ],
+      "UpstreamPathTemplate": "/comenzi/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  ]
+}

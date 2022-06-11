@@ -1,0 +1,48 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "apigateway",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "API.Gateway",
+          "Version": "1.0",
+          "Url": "http://localhost:5205/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "locatiimagazine",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "LocatiiMagazine.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5205/locatiimagazine/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "catalogcarti",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "CatalogCarti.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5205/catalogcarti/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "comenzi",
+      "TransformByOcelotConfig": true,
+      "Config": [
+        {
+          "Name": "Comenzi.API",
+          "Version": "1.0",
+          "Url": "http://localhost:5205/comenzi/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

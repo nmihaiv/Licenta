@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "https",
+      "SwaggerKey": "catalogcarti",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7228"
+        }
+      ],
+      "UpstreamPathTemplate": "/catalogcarti/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamScheme": "http",
+      "SwaggerKey": "locatiimagazine",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "locatiimagazineapi-service",
+          "Port": "8003"
+        }
+      ],
+      "UpstreamPathTemplate": "/locatiimagazine/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ]
+    }
+  ]
+}

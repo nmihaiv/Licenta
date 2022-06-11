@@ -1,0 +1,12 @@
+# Configure service
+apiVersion: v1
+kind: Service
+metadata:
+  name: apigateway-service
+spec:
+  selector:
+    app: apigateway-pod
+  ports:
+  - port: 8011
+    targetPort: 80
+  type: LoadBalancer

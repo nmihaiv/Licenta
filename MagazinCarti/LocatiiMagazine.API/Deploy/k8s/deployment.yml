@@ -1,0 +1,23 @@
+# Configure Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: locatiimagazineapi-deployment
+spec:
+  selector:
+    matchLabels:
+      app: locatiimagazineapi-pod
+  template:
+    metadata:
+      labels:
+        app: locatiimagazineapi-pod
+    spec:
+      containers:
+      - name: locatiimagazineapi-container
+        image: mihainegrila.licenta/locatiimagazine.api:1.0.1
+        resources:
+          limits:
+            memory: "128Mi" # 128 mili bytes
+            cpu: "500m"     # 500 mili cpu
+        ports:
+        - containerPort: 80

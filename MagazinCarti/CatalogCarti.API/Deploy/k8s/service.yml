@@ -1,0 +1,12 @@
+# Configure service
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogcartiapi-service
+spec:
+  selector:
+    app: catalogcartiapi-pod
+  ports:
+  - port: 8002
+    targetPort: 80
+  type: LoadBalancer

@@ -1,0 +1,11 @@
+# Configure service
+apiVersion: v1
+kind: Service
+metadata:
+  name: locatiimagazineapi-service
+spec:
+  selector:
+    app: locatiimagazineapi-pod
+  ports:
+  - port: 8003
+    targetPort: 80
